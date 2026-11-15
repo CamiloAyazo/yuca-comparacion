@@ -1,0 +1,11 @@
+# Dependencias del proyecto. Google Colab ya trae todas instaladas.
+# Las versiones exactas se congelarán con "pip freeze" cuando ejecutemos los experimentos.
+torch
+torchvision
+numpy
+pandas
+pillow
+scikit-learn
+matplotlib
+pyyaml
+tqdm
