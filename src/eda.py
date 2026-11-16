@@ -141,18 +141,26 @@ def mostrar_pares(pares, raiz, n=6, ruta_salida=None):
     return ruta_salida
 
 
-def generar_exclusiones(inventario, pares_casi=None, incluir_casi=False):
+def generar_exclusiones(inventario, pares_casi=None, incluir_casi=False, retirar_conflictivas=False):
     """Lista de imágenes a retirar para evitar fugas. El conjunto de PRUEBA nunca se modifica.
 
     Regla: prioridad test > validation > train. Si una imagen de train (o validation) es
     idéntica a una de una partición con más prioridad, se retira la de menor prioridad.
     Dentro de una misma partición de train/validation se conserva una sola copia.
     Con incluir_casi=True se aplica lo mismo a los pares casi duplicados entre particiones.
+    Con retirar_conflictivas=True, si una misma foto (mismo MD5) aparece con etiquetas
+    distintas, se retiran TODAS sus copias de entrenamiento y validación (no se conserva ninguna).
     """
     prioridad = {"test": 0, "validation": 1, "train": 2}
     excluidos = {}
     for _, grupo in inventario[inventario.duplicated("md5", keep=False)].groupby("md5"):
         grupo = grupo.assign(p=grupo["particion"].map(prioridad)).sort_values(["p", "ruta"])
+        if retirar_conflictivas and grupo["clase"].nunique() > 1:
+            etiquetas = "/".join(sorted(grupo["clase"].unique()))
+            for _, fila in grupo.iterrows():
+                if fila["particion"] != "test":
+                    excluidos[fila["ruta"]] = f"misma foto con etiquetas distintas ({etiquetas})"
+            continue
         mejor = grupo.iloc[0]
         for _, fila in grupo.iloc[1:].iterrows():
             if fila["particion"] == "test":

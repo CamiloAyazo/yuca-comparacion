@@ -1,7 +1,6 @@
 # Configuración del protocolo experimental.
-# Estos valores son una PROPUESTA INICIAL para que el código pueda ejecutarse.
-# El equipo debe revisarlos, cambiarlos si lo considera y registrar la decisión
-# en docs/02_protocolo.md ANTES de ejecutar E0. Después no se tocan.
+# Valores decididos por el equipo el 2026-11-15 (ver docs/02_protocolo.md).
+# Fijados ANTES de ejecutar E0. Después no se tocan.
 
 datos:
   url: https://storage.googleapis.com/emcassavadata/cassavaleafdata.zip
@@ -13,7 +12,7 @@ protocolo:
   tamano_imagen: 224                # tamaño con el que se preentrenaron ambos backbones
   tamano_lote: 32
   metrica_principal: macro_f1       # con ella se elige la mejor época (en VALIDACIÓN)
-  pesos_por_clase: false            # true = la pérdida castiga más los errores en clases escasas
+  pesos_por_clase: true             # decisión del equipo (2026-11-15): la pérdida castiga más los errores en clases escasas
   trabajadores: 2                   # procesos que leen imágenes en paralelo
 
 e0:                                 # baseline
@@ -23,8 +22,8 @@ e0:                                 # baseline
   tasa_aprendizaje: 0.001
 
 extraccion:                         # E1 y E3: MISMOS valores para que la comparación sea justa
-  backbone_a: mobilenet_v2
-  backbone_b: resnet18
+  backbone_a: resnet18             # decisión del equipo (2026-11-15)
+  backbone_b: mobilenet_v2
   epocas: 10
   tasa_aprendizaje: 0.001
 

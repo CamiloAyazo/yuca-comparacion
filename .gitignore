@@ -1,0 +1,9 @@
+# Los datos y los modelos entrenados no se suben al repositorio (son muy pesados)
+data/
+checkpoints/
+*.zip
+*.pt
+*.pth
+__pycache__/
+.ipynb_checkpoints/
+resultados/PRUEBA_*/

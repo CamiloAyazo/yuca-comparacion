@@ -65,7 +65,7 @@ Los guiones con cifras se redactan cuando existan los resultados reales.
 
 1. *¿Por qué no pueden decir que una arquitectura es "mejor" con una sola ejecución?* — Una diferencia pequeña puede ser azar de la semilla; por eso se repite con otras semillas y se compara con esa variación.
 2. *¿Por qué E1 vs E3 es la comparación primaria y no E2 vs E3?* — Porque E1 y E3 solo difieren en la arquitectura. E2 además cambia qué capas se entrenan y la tasa.
-3. *¿Qué descongelaron exactamente en E2?* — `features[17:]` de MobileNetV2: el último bloque residual invertido y la convolución final (≈890 mil parámetros).
+3. *¿Qué descongelaron exactamente en E2?* — `layer4` de ResNet18: el último bloque residual (≈8,4 millones de parámetros, cerca de tres cuartos de la red).
 4. *¿Por qué una tasa de aprendizaje menor en E2?* — Los pesos preentrenados ya son buenos; pasos grandes los dañarían.
 5. *¿E2 partió de cero?* — No: de los pesos del mejor E1. Por eso su costo real es E1 + E2.
 6. *¿Usaron el conjunto de prueba para decidir algo?* — No: la mejor época se elige con validación; la prueba se evalúa una vez por experimento.

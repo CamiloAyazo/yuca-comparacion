@@ -13,9 +13,9 @@ protocolo experimental común?
 | Exp. | Diseño | Pregunta |
 |---|---|---|
 | E0 | CNN pequeña entrenada desde cero | ¿Qué se consigue sin una arquitectura sofisticada? |
-| E1 | Backbone A (MobileNetV2) congelado + cabeza | ¿Qué aporta el aprendizaje por transferencia? |
+| E1 | Backbone A (ResNet18) congelado + cabeza | ¿Qué aporta el aprendizaje por transferencia? |
 | E2 | Parte de E1; bloque final descongelado, tasa menor | ¿Mejora frente a E1 y a qué costo? |
-| E3 | Backbone B (ResNet18) congelado + cabeza | ¿Qué arquitectura ofrece mejor compromiso? |
+| E3 | Backbone B (MobileNetV2) congelado + cabeza | ¿Qué arquitectura ofrece mejor compromiso? |
 | Adicional | Brillo sobre copia de la prueba (o augmentation en E1) | Robustez |
 
 ## Estructura

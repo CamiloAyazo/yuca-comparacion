@@ -38,8 +38,8 @@ Explicación de cada pieza, organizada por entrega. Para cada parte: qué hace, 
 Tres bloques (convolución 3×3 → normalización → ReLU → reducción a la mitad) con 16, 32 y 64 filtros, promedio global y una capa lineal de 5 salidas. ≈24.000 parámetros, imágenes de 64×64, entrenada desde cero. Alternativa disponible en la configuración: `tipo: lineal` (clasificador lineal sobre píxeles).
 
 ## 6. E1 extracción de características — `src/modelos.py` y `src/entrenar.py`
-1. `crear_modelo('mobilenet_v2')` carga los pesos de ImageNet y reemplaza la última capa (1.000 clases) por `Dropout + Linear(1280 → 5)`.
-2. `congelar_backbone()` marca todos los pesos como no entrenables, menos la cabeza (6.405 parámetros entrenables de 2,2 millones).
+1. `crear_modelo('resnet18')` carga los pesos de ImageNet y reemplaza la última capa (1.000 clases) por `Dropout + Linear(512 → 5)`.
+2. `congelar_backbone()` marca todos los pesos como no entrenables, menos la cabeza (2.565 parámetros entrenables de 11,2 millones).
 3. `poner_en_modo_entrenamiento()` deja el backbone en modo evaluación para que sus capas BatchNorm no cambien sus estadísticas.
 4. El ciclo `una_epoca()` hace los cinco pasos: borrar gradientes → predecir → medir error → calcular correcciones → aplicar correcciones.
 5. Al final de cada época se evalúa en **validación**; si el macro-F1 mejora, se guarda ese modelo. La prueba se evalúa una sola vez, con el mejor modelo guardado.
@@ -55,10 +55,10 @@ Tres bloques (convolución 3×3 → normalización → ReLU → reducción a la 
 # ENTREGA 2 (proyecto final)
 
 ## 9. E3 segunda arquitectura
-Idéntico a E1, cambiando solo `mobilenet_v2` por `resnet18` (cabeza `Dropout + Linear(512 → 5)`). Épocas, tasa, lote, semilla, datos y transformaciones salen de las mismas líneas de `config.yaml` (sección `extraccion`), por lo que la única diferencia es la arquitectura.
+Idéntico a E1, cambiando solo `resnet18` por `mobilenet_v2` (cabeza `Dropout + Linear(1280 → 5)`). Épocas, tasa, lote, semilla, datos y transformaciones salen de las mismas líneas de `config.yaml` (sección `extraccion`), por lo que la única diferencia es la arquitectura.
 
 ## 10. E2 ajuste fino
-`ejecutar('E2')` carga `checkpoints/E1.pt` (el mejor E1), llama `descongelar_bloque_final()` (en MobileNetV2: `features[17:]`, el último bloque residual y la convolución final; ≈890.000 parámetros entrenables) y entrena 5 épocas con tasa 0,0001. Se reporta el tiempo propio y el **acumulado** (E1 + E2), porque E2 no existe sin E1.
+`ejecutar('E2')` carga `checkpoints/E1.pt` (el mejor E1), llama `descongelar_bloque_final()` (en ResNet18: `layer4`, el último bloque residual; ≈8,4 millones de parámetros entrenables) y entrena 5 épocas con tasa 0,0001. Se reporta el tiempo propio y el **acumulado** (E1 + E2), porque E2 no existe sin E1.
 
 ## 11. Estabilidad
 `ejecutar('E1', semilla=1)` repite el experimento con otra semilla y lo guarda como `E1_s1`. `analisis.estabilidad()` calcula media y desviación entre semillas.
