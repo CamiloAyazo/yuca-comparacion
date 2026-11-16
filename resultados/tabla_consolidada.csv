@@ -1,0 +1,3 @@
+Exp.,Modelo,Accuracy,Macro-F1,Val macro-F1,Mejor época,Entren. (s),Entren. acumulado (s),Inferencia ms/img (lote 1),Inferencia ms/img (en lote),Parámetros,Entrenables,Tamaño (MB),Dispositivo
+E0,cnn_pequena,0.5973,0.4638,0.4532,8,347.7,347.7,0.576,0.033,24133,24133,0.1,Tesla T4
+E1,resnet18,0.7411,0.659,0.6617,8,542.7,542.7,3.717,0.9,11179077,2565,44.75,Tesla T4

@@ -1,0 +1,69 @@
+ruta,motivo
+train/cbb/train-cbb-129.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-140.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-145.jpg,misma foto con etiquetas distintas (cbb/cbsd)
+train/cbb/train-cbb-223.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-224.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-237.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-288.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-324.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-412.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-427.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbb/train-cbb-465.jpg,casi idéntica a test/cbb/test-cbb-140.jpg
+train/cbb/train-cbb-99.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-1159.jpg,misma foto con etiquetas distintas (cbsd/cgm)
+train/cbsd/train-cbsd-123.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-125.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-127.jpg,casi idéntica a validation/cbsd/validation-cbsd-473.jpg
+train/cbsd/train-cbsd-1272.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-1302.jpg,casi idéntica a test/cbb/test-cbb-140.jpg
+train/cbsd/train-cbsd-1365.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-1386.jpg,casi idéntica a test/cmd/test-cmd-665.jpg
+train/cbsd/train-cbsd-143.jpg,idéntica a validation/cbsd/validation-cbsd-72.jpg
+train/cbsd/train-cbsd-146.jpg,casi idéntica a test/cbsd/test-cbsd-479.jpg
+train/cbsd/train-cbsd-23.jpg,idéntica a test/cbsd/test-cbsd-329.jpg
+train/cbsd/train-cbsd-281.jpg,casi idéntica a validation/cbsd/validation-cbsd-117.jpg
+train/cbsd/train-cbsd-316.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-55.jpg,casi idéntica a validation/healthy/validation-healthy-82.jpg
+train/cbsd/train-cbsd-568.jpg,casi idéntica a test/cmd/test-cmd-877.jpg
+train/cbsd/train-cbsd-603.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-760.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-791.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-809.jpg,casi idéntica a validation/cbsd/validation-cbsd-308.jpg
+train/cbsd/train-cbsd-855.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cbsd/train-cbsd-901.jpg,idéntica a train/cbsd/train-cbsd-618.jpg
+train/cbsd/train-cbsd-954.jpg,casi idéntica a validation/cbsd/validation-cbsd-144.jpg
+train/cbsd/train-cbsd-999.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-242.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-282.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-33.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-332.jpg,casi idéntica a validation/cgm/validation-cgm-73.jpg
+train/cgm/train-cgm-375.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-424.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-442.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-498.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-528.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-603.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-62.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+train/cgm/train-cgm-755.jpg,casi idéntica a validation/cgm/validation-cgm-178.jpg
+train/cmd/train-cmd-108.jpg,idéntica a validation/cmd/validation-cmd-813.jpg
+train/cmd/train-cmd-1326.jpg,idéntica a validation/cmd/validation-cmd-291.jpg
+train/cmd/train-cmd-1711.jpg,casi idéntica a test/cmd/test-cmd-627.jpg
+train/cmd/train-cmd-1935.jpg,casi idéntica a validation/cmd/validation-cmd-448.jpg
+train/cmd/train-cmd-2171.jpg,idéntica a train/cmd/train-cmd-1872.jpg
+train/cmd/train-cmd-2255.jpg,misma foto con etiquetas distintas (cbb/cmd)
+train/cmd/train-cmd-412.jpg,idéntica a train/cmd/train-cmd-2582.jpg
+train/cmd/train-cmd-858.jpg,casi idéntica a validation/cmd/validation-cmd-479.jpg
+train/healthy/train-healthy-295.jpg,casi idéntica a test/cmd/test-cmd-628.jpg
+validation/cbb/validation-cbb-134.jpg,misma foto con etiquetas distintas (cbb/cmd)
+validation/cbb/validation-cbb-142.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cbb/validation-cbb-152.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cbb/validation-cbb-86.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cbb/validation-cbb-94.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cbsd/validation-cbsd-117.jpg,casi idéntica a test/cbsd/test-cbsd-36.jpg
+validation/cbsd/validation-cbsd-148.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cbsd/validation-cbsd-300.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cbsd/validation-cbsd-339.jpg,misma foto con etiquetas distintas (cbb/cbsd/cgm)
+validation/cgm/validation-cgm-84.jpg,misma foto con etiquetas distintas (cbsd/cgm)
+validation/cmd/validation-cmd-138.jpg,casi idéntica a test/cmd/test-cmd-592.jpg
+validation/cmd/validation-cmd-90.jpg,idéntica a validation/cmd/validation-cmd-164.jpg

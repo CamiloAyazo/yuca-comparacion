@@ -1,0 +1,90 @@
+{
+  "accuracy": 0.5973474801061008,
+  "macro_f1": 0.4637609488006732,
+  "por_clase": {
+    "cbb": {
+      "precision": 0.36792452830188677,
+      "recall": 0.5032258064516129,
+      "f1": 0.4250681198910082,
+      "imagenes": 155
+    },
+    "cbsd": {
+      "precision": 0.6285714285714286,
+      "recall": 0.4573804573804574,
+      "f1": 0.529482551143201,
+      "imagenes": 481
+    },
+    "cgm": {
+      "precision": 0.4056603773584906,
+      "recall": 0.16666666666666666,
+      "f1": 0.23626373626373626,
+      "imagenes": 258
+    },
+    "cmd": {
+      "precision": 0.75,
+      "recall": 0.8160270880361173,
+      "f1": 0.7816216216216216,
+      "imagenes": 886
+    },
+    "healthy": {
+      "precision": 0.2450592885375494,
+      "recall": 0.5904761904761905,
+      "f1": 0.3463687150837989,
+      "imagenes": 105
+    }
+  },
+  "matriz_confusion": [
+    [
+      78,
+      35,
+      8,
+      18,
+      16
+    ],
+    [
+      95,
+      220,
+      16,
+      83,
+      67
+    ],
+    [
+      18,
+      24,
+      43,
+      123,
+      50
+    ],
+    [
+      10,
+      58,
+      37,
+      723,
+      58
+    ],
+    [
+      11,
+      13,
+      2,
+      17,
+      62
+    ]
+  ],
+  "experimento": "E0",
+  "modelo": "cnn_pequena",
+  "descripcion": "Baseline sin preentrenamiento",
+  "mejor_epoca": 8,
+  "val_macro_f1_mejor": 0.4531794264775306,
+  "tiempo_entrenamiento_s": 347.7,
+  "tiempo_entrenamiento_acumulado_s": 347.7,
+  "tiempo_prueba_completa_s": 8.5,
+  "inferencia": {
+    "ms_por_imagen_lote_1": 0.576,
+    "ms_por_imagen_lote_32": 0.033
+  },
+  "memoria_gpu_max_mb": 92.7,
+  "dispositivo": "Tesla T4",
+  "parametros_totales": 24133,
+  "parametros_entrenables": 24133,
+  "tamano_mb": 0.1
+}

@@ -1,0 +1,22 @@
+{
+  "experimento": "E0",
+  "tamano": 64,
+  "aumento": false,
+  "parte_de": null,
+  "ajuste_fino": false,
+  "modelo": "cnn_pequena",
+  "epocas": 10,
+  "tasa": 0.001,
+  "descripcion": "Baseline sin preentrenamiento",
+  "semilla": 42,
+  "tamano_lote": 32,
+  "pesos_por_clase": true,
+  "optimizador": "Adam",
+  "preentrenado": true,
+  "limite_prueba_rapida": null,
+  "dispositivo": "Tesla T4",
+  "torch": "2.14.1+cu130",
+  "parametros_totales": 24133,
+  "parametros_entrenables": 24133,
+  "tamano_mb": 0.1
+}
