@@ -27,7 +27,7 @@ Preguntas para pensar (no son respuestas):
 
 | Hipótesis | Resultado | ¿Se cumplió? | Lectura del equipo |
 |---|---|---|---|
-| E0: macro-F1 > 0,55 | 0,464 | No | **[por completar]** |
+| E0: macro-F1 > 0,55 | 0,464 | No | Al reducir las fotos a 64×64 se pierde el detalle: desaparecen las manchas pequeñas que distinguen las enfermedades. |
 | E1: al menos +0,20 sobre E0 | +0,195 (0,659 frente a 0,464) | Por 0,005 no alcanzó el umbral | Se cumplió en esencia: la transferencia mejoró mucho y 0,005 no cambia la conclusión; se reporta el número tal cual. |
 | E1: cbsd será la clase más difícil | La más difícil fue cbb (F1 0,414); cbsd quedó en 0,692 | No | Ver análisis de errores. |
 | Pesos por clase suben el recall de cbb y healthy | Recall E1: cbb 0,484, healthy 0,705; precisión de cbb solo 0,362 | No comprobable sin ejecución sin pesos | Posible efecto adverso: los pesos pudieron empujar al modelo a predecir cbb de más. No se puede confirmar sin una ejecución sin pesos. |
