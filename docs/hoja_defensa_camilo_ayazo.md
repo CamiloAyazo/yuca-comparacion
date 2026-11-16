@@ -13,7 +13,7 @@ Leerla en voz alta dos o tres veces y luego decirlo con mis palabras, sin leer.
 - Revisé los datos y los duplicados (notebook 02), cerré el protocolo, escribí las hipótesis y ejecuté E0 y E1 (notebook 03).
 
 **Decisiones que tomé y por qué**
-- **Colab:** no tenemos experiencia instalando bibliotecas, Colab trae todo listo y da una GPU que sí sirve para PyTorch. Mi portátil tiene gráficos integrados de Intel, no una GPU NVIDIA.
+- **Colab:** no tenemos experiencia instalando bibliotecas, Colab trae todo listo y da una GPU que sí sirve para PyTorch. (Para entrenar con PyTorch hace falta una GPU NVIDIA; confirmar en el Administrador de tareas → Rendimiento qué GPU tiene mi portátil.)
 - **Dataset de TensorFlow Datasets:** por su tamaño manejable para 15 días.
 - **Duplicados:** encontré la misma foto guardada con etiquetas distintas (por ejemplo, como cbb, cbsd y cgm a la vez). Decidí retirar todas esas copias de entrenamiento y validación, para que el modelo no aprenda de etiquetas dudosas. También retiré los casi duplicados entre particiones para evitar fuga de información. La prueba no la toqué. Quedaron 5.600 / 1.877 / 1.885.
 - **ResNet18 como Backbone A:** el ajuste fino de E2 se hace sobre la red con más capacidad para adaptarse.
